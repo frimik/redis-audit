@@ -69,7 +69,7 @@ class KeyStats
 end
 
 class RedisAudit
-  @@key_regex = /^(.*):(.*)$/
+  @@key_regex = /^(.*)[:._](.*)$/
   @@debug_regex = /serializedlength:(\d*).*lru_seconds_idle:(\d*)/
   
   # Configure regular expressions here if you need to guarantee that certain keys are grouped together
